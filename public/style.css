@@ -313,6 +313,11 @@ nav ul li {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  #about {
+    display: block;
+  }
+}
 #guidelines {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -351,6 +356,11 @@ nav ul li {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #guidelines {
+    display: block;
+  }
+}
 #about section:nth-child(2) {
   position: relative;
 }
@@ -382,6 +392,7 @@ nav ul li {
 #contribute .container {
   border: 2px solid var(--color-primary);
   padding: 2rem;
+  background-color: var(--color-background);
 }
 #contribute:after {
   content: url("https://i.postimg.cc/CLp2B5G6/castle.png");
@@ -389,9 +400,15 @@ nav ul li {
   transform: scale(0.5);
   display: block;
   text-align: center;
-  margin: -7rem;
+  margin: -7rem 0;
 }
 
+@media screen and (max-width: 600px) {
+  #contribute:after {
+    transform: scale(0.3);
+    margin-left: -11rem;
+  }
+}
 #files {
   display: grid;
   place-content: center;
@@ -490,6 +507,11 @@ nav ul li {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox='0 0 24 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18c0-1.105.887-2 1.998-2 1.104 0 2-.895 2.002-1.994V14v6h-4v-2zM0 13.998C0 12.895.888 12 2 12c1.105 0 2 .888 2 2 0 1.105.888 2 2 2 1.105 0 2 .888 2 2v2H0v-6.002zm16 4.004A1.994 1.994 0 0 1 14 20c-1.105 0-2-.887-2-1.998v-4.004A1.994 1.994 0 0 0 10 12c-1.105 0-2-.888-2-2 0-1.105-.888-2-2-2-1.105 0-2-.887-2-1.998V1.998A1.994 1.994 0 0 0 2 0a2 2 0 0 0-2 2V0h8v2c0 1.105.888 2 2 2 1.105 0 2 .888 2 2 0 1.105.888 2 2 2 1.105 0 2-.888 2-2 0-1.105.888-2 2-2 1.105 0 2-.888 2-2V0h4v6.002A1.994 1.994 0 0 1 22 8c-1.105 0-2 .888-2 2 0 1.105-.888 2-2 2-1.105 0-2 .887-2 1.998v4.004z' fill='%231a472a' fill-opacity='0.71' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
+@media screen and (max-width: 600px) {
+  .features {
+    display: block;
+  }
+}
 .profile {
   width: 95vw;
   max-width: 80ch;
@@ -566,7 +588,9 @@ nav ul li {
   --logomark-padding: 0;
   position: relative;
   padding: 3rem 1rem;
-  background-color: var(--color-primary);
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/283febae-674c-4849-a834-cc787b85e43b/d45y2up-d13ef416-b346-4473-bbdd-6555edb69f3e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4M2ZlYmFlLTY3NGMtNDg0OS1hODM0LWNjNzg3Yjg1ZTQzYlwvZDQ1eTJ1cC1kMTNlZjQxNi1iMzQ2LTQ0NzMtYmJkZC02NTU1ZWRiNjlmM2UuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9ZpK47_jeQV_WlT5y-3BNNnEdFlsRE9_tc1m1fiCFSk");
+  background-size: cover;
+  background-position: center;
   color: var(--color-light);
 }
 .page-footer::before {
@@ -580,8 +604,8 @@ nav ul li {
   left: 50%;
   width: 2em;
   transform: translate(-50%, -100%);
-  background-color: var(--color-background);
-  color: var(--color-primary);
+  background-color: var(--color-secondary-alt);
+  color: var(--color-primary-alt);
   font-size: 3rem;
   content: "H";
 }
