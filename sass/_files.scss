@@ -12,9 +12,8 @@
   .container {
     display: inline-block;
     padding: 5vmin;
-    outline: 4px dashed var(--color-secondary);
-    background-color: var(--color-background);
     text-align: center;
+    background: var(--color-secondary-alt); 
 
     a:not(:last-child) {
       margin: 0.5rem;

@@ -1,9 +1,11 @@
 .profile {
   width: 95vw;
   max-width: 80ch;
-  margin: 1rem auto 10vh;
+  margin: 1rem auto;
   padding: 1.25rem;
   z-index: 1;
+  border: 2px solid var(--color-primary);
+  background: var(--color-secondary-alt);
 
   h4 {
     margin: 0;

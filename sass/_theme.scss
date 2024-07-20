@@ -1,26 +1,34 @@
-$color-primary: #3a00ff !default;
-$color-primary-alt: #6f6ffd !default;
-$color-secondary: #d42257 !default;
-$color-background: #d2fbf7 !default;
+$maincolor:#754916;
+$colorg1:#740001;
+$colorg2:#c09521;
+$colors1:#1a472a;
+$colors2:#5d5d5d;
+$colorh1:#e6cc84;
+$colorh2:#372e29;
+$colorr1:#0e1a40;
+$colorr2:#946b2d;
+$color-background: #fffef0; 
+$secondary-background: #8a4d0f; 
 
 $brand-colors: (
-  primary: $color-primary,
-  primary-alt: $color-primary-alt,
-  secondary: $color-secondary,
+  primary: $maincolor,
+  primary-alt: $colorg1,
+  secondary: $colorh2,
+  secondary-alt: $colorh1,
 ) !default;
 
 $color-body: scale-color(
-  $color-primary,
+  $colorr1,
   $lightness: -30%,
   $saturation: -50%
 ) !default;
-$color-gray: mix(#767676, $color-body, 70%) !default;
+$color-gray: mix(#767676, $colors2, 70%) !default;
 
 $colors: map-merge(
   $brand-colors,
   (
     background: $color-background,
-    text: $color-body,
+    text: $colors2,
     light: #fff,
   )
 );
@@ -58,7 +66,8 @@ $font-sizes: (
   }
 
   --color-anchor: #{$link-color};
-  --font-family: "Baloo 2", sans-serif;
+  --font-family: "Harry Potter", sans-serif;
+  --small-font: "EB Garamond", serif;
   --font-weight-strong: #{$font-weight-strong};
 
   @each $key, $size in $font-sizes {

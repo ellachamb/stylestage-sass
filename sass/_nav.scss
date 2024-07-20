@@ -8,18 +8,25 @@ nav {
     list-style: none;
 
     a {
-      display: inline-grid;
-      padding: 0.5rem;
+      display: flex;
+      padding: 1rem 2rem ; 
       color: var(--color-secondary);
       font-size: 1.25rem;
       text-decoration: none;
+      border: 2px solid var(--color-primary);
+      background: var(--color-secondary-alt);
+      justify-content: space-around;
+
+      &:hover {
+        transform: translate(-0.15em, -0.15em);
+        box-shadow: .5rem .5rem .5rem var(--color-secondary);
+        transition: 180ms all ease-in-out;
+      }
 
       &::before {
-        width: 100%;
-        height: 0.33em;
-        background-color: var(--color-secondary);
-        opacity: 0.15;
-        content: "";
+        display: inline-block; 
+        opacity: 0.7;
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="%23372e29" class="bi bi-magic" viewBox="0 0 16 16"><path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z"/></svg>');
       }
 
       &:hover::before,
